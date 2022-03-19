@@ -1,0 +1,193 @@
+/*formatação geral*/
+body{
+    font-family:"https://fonts.googleapis.com/css2?family=Chilanka&family=Indie+Flower&family=Sacramento&family=Shadows+Into+Light&display=swap", cursive;
+    background-color: #4169E1;
+}
+
+h1,h2,h3{
+    margin: 0;
+    font-family:Cookie,cursive;
+    font-weight: 700;
+}
+
+
+p{
+    font-family: "Dancing+Script",Handlee,cursive ;
+}
+.container{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4169E1;
+}
+/*cabeçalho nav bar*/
+.logo img{
+    border-radius: 50%;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4169E1;
+    padding: 20px;
+}
+nav > a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: cookie;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+nav ul li{
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+    padding: 2%;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 5px;
+    width: 100px;
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+}
+ /*header*/
+header{
+    background-image: url(../img/capa2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+header h1{
+    margin-bottom: 2em;
+    font-size: 1.7em;
+    font-weight: 700;
+    background-color: #09576E;
+}
+header p{
+    margin-bottom: 2em;
+    background-color: #09576E;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+/*sobre*/
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #4169E1;
+    color: #fff;
+}
+#sobre h2{
+    margin-top: 20px;
+    font-size: 2em;
+}
+.foto img{
+    width: 60%;
+}
+.foto{
+    float: left;
+    width: 50%;
+}
+.texto{
+    float: right;
+    width: 50%;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    color: black;
+    background-color: #4169E1;
+}
+
+#especialidades {
+   padding: 20px;
+   flex-direction: column;
+   align-items: center;
+   text-decoration: none;
+   color: black;
+   background-color: #4169E1;
+}
+
+#especialidades {  
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    margin: 0 auto;
+    background-color: #4169E1;
+}
+#epecialidades div {
+    display: flex;
+    flex-direction: row;
+    align-items: row;
+    text-align: row;
+    margin-top: 30px;
+}
+#especialidades div p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 30px;
+}
+
+
+
+@media screen and (min-width:768px){
+    /*cabeçalho*/
+nav{
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav ul{
+    flex-direction: row;
+    width: 80%;
+}
+/*header*/
+header{
+    height: 600px;
+    height: 60vh;
+    justify-content: center;
+}
+    #sobre{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 90vh;
+        justify-content: center;
+        min-height: 80vh;
+        
+    }
+    #sobre h2{
+        text-align: center;
+        width: 100%;
+    }
+    #sobre div{
+        flex-grow: 1;
+        flex-basis: 300px;
+        padding:0 10px;
+    }
+
+}
